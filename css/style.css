@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.inner {
+    position: relative;
+    max-width: 1640px;
+    margin: auto;
+    height: 100%;
+}
+
+section {
+    position: relative;
+    z-index: 0;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header .title a {
+    font-size: 30px;
+    color: #fff;
+
+}
+
+header .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 42px;
+}
+
+nav ul a {
+    color: #fff;
+    font-size: 20px;
+}
+
+#s01 {
+    background: url(../img/wrtFileImageView.jpg) no-repeat center center/cover;
+    opacity: 0.7;
+}
+
+#s01 .inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.t-warp h2,
+p,
+a {
+    position: relative;
+    color: #000;
+}
+
+section h2 {
+    font-size: 120px;
+}
+
+section p {
+    font-size: 17px;
+    padding: 30px 0 50px;
+}
+
+a.btn {
+    display: inline-block;
+    width: 170px;
+    background-color: aliceblue;
+    padding: 10px 40px;
+    border-radius: 21px;
+    font-size: 22px;
+}
+
+#s01 .t-warp>* {
+    color: #fff;
+}
+
+.t-warp>p {
+    width: 476px;
+    height: 213px;
+}
+
+.s02-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#s02 .t-wrap {
+    position: relative;
+    display: inline-block;
+
+}
+
+#s02 .t-wrap::after {
+    display: block;
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #404040;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.3;
+}
+
+#s02 .t-wrap h2,
+#s02 .t-wrap p {
+    position: relative;
+}
+
+#s02 .t-wrap::before {
+    display: block;
+    content: "";
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #c9c9c9;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#s02 {
+    background-color: white;
+    padding: 200px 0;
+}
+
+.s02-list h3 {
+    font-size: 30px;
+}
+
+.s02-list li {
+    width: 260px;
+    height: 218px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.s02-list li p {
+    padding-top: 20px;
+    padding-bottom: 0;
+}
+
+#s03 {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightgray;
+}
+
+#s03 .inner {
+    max-width: none;
+    display: flex;
+
+}
+
+#s03 .t-warp,
+.img-wrap {
+    width: 50%;
+}
+
+#s03 .img-warp {
+    height: 100%;
+    background: url(../img/gull-9710092_1280.png) no-repeat center center/cover;
+}
+
+#s03 .t-warp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#s04 {
+    padding:200px 0;
+}
+
+#s04 .t-warp {
+    position: relative
+}
+
+#s04 .t-warp a.btn {
+    position: absolute;
+    right: 0;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+
