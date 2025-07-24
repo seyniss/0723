@@ -45,7 +45,7 @@ a.btn {
 }
 .scroll-top-btn{
   position:fixed;
-  z-index: 4;
+  z-index: 40;
   right: 20px;
   bottom: 20px;
   height: 50px;
@@ -53,7 +53,7 @@ a.btn {
   background-color: #7944c2;
   color:white;
   cursor: pointer;
-  translate: all .3s;
+  transition: all 0.3s ease;
   opacity: 0;
   transform: translateY(50px);
 }

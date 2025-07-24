@@ -8,16 +8,22 @@ menuLinks.forEach((link) => {
         e.preventDefault();
 
         const targetId = link.getAttribute('href').substring(1);
-        console.log(targetId);
-        if (targetIdElement) {
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const headerHeight = document.querySelector('header').getBoundingClientRect().height;
+            const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+
             window.scrollTo({
-                top: document.getElementById(targetId).offsetTop,
+                top: offsetTop,
                 behavior: 'smooth'
-            })
-            
+            });
+
+            // 모바일 메뉴 닫기
+            document.querySelector('header').classList.remove('open');
+        }
+    });
 });
-
-
 scrollTopBtn.addEventListener('click', (e) => {
     window.scrollTo({
         top: 0,
